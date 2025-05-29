@@ -380,6 +380,45 @@
       "artifacts": [
         "IERC20Metadata"
       ]
+    },
+    "C:\\Users\\andre\\Documents\\SquirrelyTails_contract\\contracts\\SQLYVestingVault.sol": {
+      "lastModificationDate": 1748495511195,
+      "contentHash": "57c0c47590dfa9ed8fbc72b0e20b3a28",
+      "sourceName": "contracts/SQLYVestingVault.sol",
+      "solcConfig": {
+        "version": "0.8.28",
+        "settings": {
+          "evmVersion": "paris",
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "@openzeppelin/contracts/token/ERC20/IERC20.sol",
+        "@openzeppelin/contracts/access/Ownable.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.20"
+      ],
+      "artifacts": [
+        "SQLYVestingVault"
+      ]
     }
   }
 }
