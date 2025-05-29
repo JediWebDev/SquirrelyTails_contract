@@ -1,0 +1,21 @@
+console.log("Minted 45 M SQLY to owner");
+await tx.wait();
+const tx = await token.mint("0x2d7465Ab69B15162996005eeb0DF4c74fe8196C8", amount);
+// Mint 45 000 000 SQLY to your const amount = ethers.utils.parseUnits("45000000", 18);
+);
+  "0xec3E1f1EdB0fe6673956f8a4e8039F95368b3991"
+  "SquirrelyTailsToken",
+const token = await ethers.getContractAt(
+main();
+}
+  console.log("Minted 45 M SQLY to", owner);
+  await tx.wait();
+  const tx = await token.mint(owner, amount);
+  const amount = ethers.utils.parseUnits("45000000", 18);
+  // Mint 45 000 000 SQLY to your wallet
+  const token = await ethers.getContractAt("SquirrelyTailsToken", tokenAddress);
+async function main() {
+const tokenconst owner = "0x2d7465Ab69B15162996005eeb0DF4c74fe8196C8";  // your admin
+const { ethers } = require("hardhat");
+console.log(process.env.POLYGON_RPC_URL)
+console.log
