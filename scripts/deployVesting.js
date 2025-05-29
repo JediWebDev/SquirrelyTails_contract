@@ -12,6 +12,7 @@ async function main() {
 
   const Vesting = await ethers.getContractFactory("SQLYVestingVault", wallet);
   const vesting = await Vesting.deploy(tokenAddress);
+  console.log("Deployment tx hash:", vesting.deployTransaction.hash);
 
   await vesting.deployed();
 
