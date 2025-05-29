@@ -1,13 +1,16 @@
 const { ethers } = require("hardhat");
+const { JsonRpcProvider } = require("@ethersproject/providers");
+require("dotenv").config();
 
 async function main() {
-  const tokenAddress = "YOUR_DEPLOYED_SQLY_TOKEN_ADDRESS"; // Replace with actual deployed token address
+  const tokenAddress = "0x82500beC6470dd6CB6743c222E32e497a12402c3";
 
-  // Safe signer fetch (does NOT use ENS)
-  const [deployer] = await ethers.getSigners();
-  console.log("Deploying contract with account:", deployer.address);
+  const provider = new JsonRpcProvider(process.env.POLYGON_RPC_URL);
+  const wallet = new ethers.Wallet(process.env.PRIVATE_KEY, provider);
 
-  const Vesting = await ethers.getContractFactory("SQLYVestingVault");
+  console.log("Deploying contract with account:", wallet.address);
+
+  const Vesting = await ethers.getContractFactory("SQLYVestingVault", wallet);
   const vesting = await Vesting.deploy(tokenAddress);
 
   await vesting.deployed();
