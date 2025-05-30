@@ -3,7 +3,7 @@ const { JsonRpcProvider } = require("@ethersproject/providers");
 require("dotenv").config();
 
 async function main() {
-  const tokenAddress = "0x2d7465Ab69B15162996005eeb0DF4c74fe8196C8";
+  const tokenAddress = "0xec3E1f1EdB0fe6673956f8a4e8039F95368b3991";
 
   const provider = new JsonRpcProvider(process.env.POLYGON_RPC_URL);
   const wallet = new ethers.Wallet(process.env.PRIVATE_KEY, provider);
