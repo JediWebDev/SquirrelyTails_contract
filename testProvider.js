@@ -3,7 +3,9 @@ require('dotenv').config();
 const { JsonRpcProvider } = require('@ethersproject/providers');
 
 async function main() {
-  const provider = new JsonRpcProvider(process.env.POLYGON_RPC_URL);
+  // force it to Polygon (chainId 137)
+  const provider = new JsonRpcProvider(process.env.POLYGON_RPC_URL, 137);
+
   try {
     const block = await provider.getBlockNumber();
     console.log('📦 latest block #:', block);
