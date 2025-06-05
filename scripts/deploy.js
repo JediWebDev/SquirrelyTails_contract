@@ -5,9 +5,8 @@ async function main() {
   console.log("Deploying with:", deployer.address);
 
   // Change this to the V2 contract name
-  const Token = await ethers.getContractFactory("SquirrelyTailsTokenV2");
-  const token = await Token.deploy();
-  await token.deployed();
+const Token = await ethers.getContractFactory("SquirrelyTailsTokenV2");
+const token = await Token.deploy();
 
   console.log("Token deployed at:", token.address);
 }
