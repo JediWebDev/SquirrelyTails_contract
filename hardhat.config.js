@@ -9,6 +9,7 @@ module.exports = {
   solidity: "0.8.28",
   networks: {
     hardhat: {
+      // You can keep or remove forking if you don’t need a local fork
       forking: process.env.POLYGON_RPC_URL
         ? { url: process.env.POLYGON_RPC_URL }
         : undefined,
@@ -20,6 +21,10 @@ module.exports = {
     },
   },
   etherscan: {
-    apiKey: process.env.ETHERSCAN_API_KEY,
+    // Make sure you set POLYGONSCAN_API_KEY in your .env (not ETHERSCAN_API_KEY)
+    apiKey: {
+      polygon: process.env.POLYGONSCAN_API_KEY
+    }
   },
 };
+
