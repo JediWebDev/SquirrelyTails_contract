@@ -228,44 +228,6 @@
         "ERC20"
       ]
     },
-    "C:\\Users\\andre\\Documents\\SquirrelyTails_contract\\contracts\\SquirrelyTailsToken.sol": {
-      "lastModificationDate": 1749158283951,
-      "contentHash": "c5fbcab1e2b041a2d0ccb4838784d43c",
-      "sourceName": "contracts/SquirrelyTailsToken.sol",
-      "solcConfig": {
-        "version": "0.8.28",
-        "settings": {
-          "evmVersion": "paris",
-          "optimizer": {
-            "enabled": false,
-            "runs": 200
-          },
-          "outputSelection": {
-            "*": {
-              "*": [
-                "abi",
-                "evm.bytecode",
-                "evm.deployedBytecode",
-                "evm.methodIdentifiers",
-                "metadata"
-              ],
-              "": [
-                "ast"
-              ]
-            }
-          }
-        }
-      },
-      "imports": [
-        "@openzeppelin/contracts/token/ERC20/ERC20.sol"
-      ],
-      "versionPragmas": [
-        "^0.8.0"
-      ],
-      "artifacts": [
-        "SquirrelyTailsTokenV2"
-      ]
-    },
     "C:\\Users\\andre\\Documents\\SquirrelyTails_contract\\node_modules\\@openzeppelin\\contracts\\token\\ERC20\\utils\\SafeERC20.sol": {
       "lastModificationDate": 1748583330805,
       "contentHash": "1b5d667d3740d866eca0352758e59827",
@@ -487,6 +449,44 @@
       ],
       "artifacts": [
         "MockERC20"
+      ]
+    },
+    "C:\\Users\\andre\\Documents\\SquirrelyTails_contract\\contracts\\SquirrelyTailsTokenV2.sol": {
+      "lastModificationDate": 1749164626225,
+      "contentHash": "c5fbcab1e2b041a2d0ccb4838784d43c",
+      "sourceName": "contracts/SquirrelyTailsTokenV2.sol",
+      "solcConfig": {
+        "version": "0.8.28",
+        "settings": {
+          "evmVersion": "paris",
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "@openzeppelin/contracts/token/ERC20/ERC20.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "SquirrelyTailsTokenV2"
       ]
     }
   }
