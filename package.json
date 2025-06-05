@@ -11,9 +11,11 @@
   "type": "commonjs",
   "description": "",
   "devDependencies": {
-    "@nomiclabs/hardhat-ethers": "^2.2.3",
+    "@nomicfoundation/hardhat-chai-matchers": "^2.0.8",
+    "@nomicfoundation/hardhat-ethers": "^3.0.8",
     "@nomiclabs/hardhat-etherscan": "^3.1.8",
     "@openzeppelin/contracts": "^4.9.6",
+    "chai": "^4.5.0",
     "dotenv": "^16.5.0",
     "hardhat": "^2.24.0"
   },
