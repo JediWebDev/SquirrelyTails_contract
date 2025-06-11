@@ -1,7 +1,7 @@
 /** @type import('hardhat/config').HardhatUserConfig */
 
-require("@nomicfoundation/hardhat-toolbox");
 require("dotenv").config();
+require("@nomicfoundation/hardhat-toolbox");
 require("@nomicfoundation/hardhat-ethers");
 require("@nomicfoundation/hardhat-chai-matchers");
 
@@ -24,7 +24,13 @@ if (process.env.POLYGON_RPC_URL && process.env.PRIVATE_KEY) {
 
 module.exports = {
   solidity: "0.8.28",
-  networks,
+  networks: {
+    polygon: {
+      url: process.env.POLYGON_RPC_URL,
+      accounts: [process.env.PRIVATE_KEY],
+      chainId: 137
+    }
+  },
   etherscan: {
     // Make sure you set POLYGONSCAN_API_KEY in your .env (not ETHERSCAN_API_KEY)
     apiKey: {
