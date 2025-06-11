@@ -1,10 +1,9 @@
 /** @type import('hardhat/config').HardhatUserConfig */
 
+require("@nomicfoundation/hardhat-toolbox");
 require("dotenv").config();
 require("@nomicfoundation/hardhat-ethers");
-require("@nomiclabs/hardhat-etherscan");
 require("@nomicfoundation/hardhat-chai-matchers");
-require("@nomicfoundation/hardhat-verify");
 
 const networks = {
   hardhat: {
